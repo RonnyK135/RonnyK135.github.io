@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.yueyongblog.com/404.html</loc>
+    <loc>https://www.yueyongblog.com/photos/index.html</loc>
     
-    <lastmod>2018-06-29T10:53:56.913Z</lastmod>
+    <lastmod>2018-06-29T16:26:02.124Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yueyongblog.com/photos/ins.json</loc>
+    
+    <lastmod>2018-06-29T16:18:40.085Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yueyongblog.com/photos/index.html</loc>
+    
+    <lastmod>2018-06-29T13:01:52.085Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.yueyongblog.com/hello-blog.html</loc>
     
-    <lastmod>2018-06-29T08:11:49.109Z</lastmod>
+    <lastmod>2018-06-29T12:56:41.328Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yueyongblog.com//404.html</loc>
+    
+    <lastmod>2018-06-29T12:27:51.793Z</lastmod>
     
   </url>
   
