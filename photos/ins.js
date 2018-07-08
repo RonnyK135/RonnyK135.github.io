@@ -120,7 +120,7 @@
           var src = 'https://raw.githubusercontent.com/RonnyK135/BlogBackup/master/photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
-          src += '.jpg';
+          src += '';
 
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                 <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
