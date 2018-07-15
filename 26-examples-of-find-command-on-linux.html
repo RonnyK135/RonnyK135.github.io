@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://www.yueyongblog.com">
-  <title>Archives: 2018 | Yue Yong&#39;s Blog</title>
+  <title>Linux命令行：find的26个用法示例 | Yue Yong&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="再多努力一点">
-<meta name="keywords" content="Linux、python、docker">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yue Yong&#39;s Blog">
-<meta property="og:url" content="https://www.yueyongblog.com/archives/2018/index.html">
+  <meta name="description" content="Linux系统中的 find 命令在查找文件时非常有用而且方便。它可以根据不同的条件来查找文件，例如权限、拥有者、修改日期/时间、文件大小等等。在这篇文章中，我们将学习如何使用 find 命令以及它所提供的选项来查找文件。">
+<meta name="keywords" content="Linux,find">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux命令行：find的26个用法示例">
+<meta property="og:url" content="https://www.yueyongblog.com/26-examples-of-find-command-on-linux.html">
 <meta property="og:site_name" content="Yue Yong&#39;s Blog">
-<meta property="og:description" content="再多努力一点">
+<meta property="og:description" content="Linux系统中的 find 命令在查找文件时非常有用而且方便。它可以根据不同的条件来查找文件，例如权限、拥有者、修改日期/时间、文件大小等等。在这篇文章中，我们将学习如何使用 find 命令以及它所提供的选项来查找文件。">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3275724-747df0725bdbd395.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-07-11T09:32:42.824Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yue Yong&#39;s Blog">
-<meta name="twitter:description" content="再多努力一点">
+<meta name="twitter:title" content="Linux命令行：find的26个用法示例">
+<meta name="twitter:description" content="Linux系统中的 find 命令在查找文件时非常有用而且方便。它可以根据不同的条件来查找文件，例如权限、拥有者、修改日期/时间、文件大小等等。在这篇文章中，我们将学习如何使用 find 命令以及它所提供的选项来查找文件。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3275724-747df0725bdbd395.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="Yue Yong&#39;s Blog" type="application/atom+xml">
   
@@ -174,78 +177,180 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-26-examples-of-find-command-on-linux" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/awk-command.html" class="archive-article-date">
-  	<time datetime="2018-07-15T08:13:15.851Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/awk-command.html">如何在Linux中使用awk工具详解</a>
+    <h1 class="article-title" itemprop="name">
+      Linux命令行：find的26个用法示例
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">awk</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/26-examples-of-find-command-on-linux.html" class="archive-article-date">
+        
+        <a href="/26-examples-of-find-command-on-linux.html" class="archive-article-date">
   	<time datetime="2018-07-09T17:56:24.807Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-10</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/26-examples-of-find-command-on-linux.html">Linux命令行：find的26个用法示例</a>
-    </h1>
-  
+        
 
-        <div class="article-info info-on-right">
-          
+        
+	         <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">2,643字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">10分</span>
+      </span>
+    </span>
+
+    <span class="archive-article-date">
+    阅读量 <span id="busuanzi_value_page_pv"></span>
+    </span>
+
+</div>
+
+	      
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+
+      
+        <p>Linux系统中的 find 命令在查找文件时非常有用而且方便。它可以根据不同的条件来查找文件，例如权限、拥有者、修改日期/时间、文件大小等等。在这篇文章中，我们将学习如何使用 find 命令以及它所提供的选项来查找文件。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3275724-747df0725bdbd395.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="small_find_command.jpg"></p>
+<a id="more"></a>
+<p>在绝大多数Linux发行版中，你都可以直接使用 find 命令而无需进行任何安装操作。如果你想在linux系统的命令行中变得特别高效，那么 find 是你必须掌握的命令之一。</p>
+<p>find 命令的基本语法如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find [path] [option] [expression]</span><br></pre></td></tr></table></figure></p>
+<h4 id="一、基本用法"><a href="#一、基本用法" class="headerlink" title="一、基本用法"></a>一、基本用法</h4><h5 id="1-列出当前目录和子目录下的所有文件"><a href="#1-列出当前目录和子目录下的所有文件" class="headerlink" title="1.列出当前目录和子目录下的所有文件"></a>1.列出当前目录和子目录下的所有文件</h5><p>这个命令会列出当前目录以及子目录下的所有文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find</span><br><span class="line">.</span><br><span class="line">./abc.txt</span><br><span class="line">./subdir</span><br><span class="line">./subdir/how.php</span><br><span class="line">./cool.php</span><br></pre></td></tr></table></figure></p>
+<p>该命令与以下命令效果相同<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find .</span><br><span class="line">$ find . -print</span><br></pre></td></tr></table></figure></p>
+<h5 id="2-查找特殊的目录或路径"><a href="#2-查找特殊的目录或路径" class="headerlink" title="2. 查找特殊的目录或路径"></a>2. 查找特殊的目录或路径</h5><p>下面的命令会查找当前目录下 test 文件夹中的文件，默认列出所有文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test</span><br><span class="line">./test</span><br><span class="line">./test/abc.txt</span><br><span class="line">./test/subdir</span><br><span class="line">./test/subdir/how.php</span><br><span class="line">./test/cool.php</span><br><span class="line">`</span><br></pre></td></tr></table></figure></p>
+<p>下面的命令用于查找指定名称的文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -name &quot;abc.txt&quot;</span><br><span class="line">./test/abc.txt</span><br></pre></td></tr></table></figure></p>
+<p>也可以使用通配符<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -name &quot;*.php&quot;</span><br><span class="line">./test/subdir/how.php</span><br><span class="line">./test/cool.php</span><br></pre></td></tr></table></figure></p>
+<p>请注意，所有的文件夹都会被递归地查找。所以，这是用于查找指定扩展名文件的一种非常强大的方式。</p>
+<p>如果我们尝试搜索 / 文件夹，也就是根目录，就会搜索整个文件系统，包括挂载的设备以及网络存储设备。所以请小心使用。当然，你随时可以通过按 Ctrl + C 来终止命令。</p>
+<p>注意：当指定文件夹的时候（例如示例中的”./test”文件夹），忽略末尾的斜杠是没有问题的。但是，如果文件夹是一个指向其它位置的链接（symlink）时，你必须在末尾写上斜杠才能使find命令正常工作（find ./test/）。</p>
+<h5 id="忽略大小写"><a href="#忽略大小写" class="headerlink" title="忽略大小写"></a>忽略大小写</h5><p>在查找文件名时，忽略大小写往往非常有用。要忽略大小写，只需要使用 iname 选项，而不是 name 选项。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -iname &quot;*.Php&quot;</span><br><span class="line">./test/subdir/how.php</span><br><span class="line">./test/cool.php</span><br></pre></td></tr></table></figure></p>
+<p>总是用双引号或单引号来包围匹配模式（文件名参数），这非常有用。不这样做的话有时也能正常工作，有时也可能会产生奇怪的结果。</p>
+<h5 id="3-限制目录查找的深度"><a href="#3-限制目录查找的深度" class="headerlink" title="3. 限制目录查找的深度"></a>3. 限制目录查找的深度</h5><p>find 命令默认会递归查找整个目录树，而这非常消耗时间和资源。好在目录查找的深度可以手动指定。例如我们只想查找一到两层以内的子目录，可以通过 maxdepth 选项来指定。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -maxdepth 2 -name &quot;*.php&quot;</span><br><span class="line">./test/subdir/how.php</span><br><span class="line">./test/cool.php</span><br><span class="line"></span><br><span class="line">$ find ./test -maxdepth 1 -name *.php</span><br><span class="line">./test/cool.php</span><br></pre></td></tr></table></figure></p>
+<p>第二个示例中指定了 maxdepth 为1，表明最多只查找一层内的子目录，也就是只查找当前文件夹。</p>
+<p>当我们只想在当前目录下查找，而不是查找整个目录树的时候，这个选项会特别有用。</p>
+<p>与 maxdepth 选项相似，还有一个选项叫做 mindepth ，正如名字所表示的那样，它会至少到达第 N 层子目录后才开始查找文件。</p>
+<h5 id="4-反向查找"><a href="#4-反向查找" class="headerlink" title="4. 反向查找"></a>4. 反向查找</h5><p>除了查找满足条件的文件之外，我们还可以查找不满足条件的所有文件。当我们知道要在查找中排除哪些文件时，这个选项就能发挥作用了。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -not -name &quot;*.php&quot;</span><br><span class="line">./test</span><br><span class="line">./test/abc.txt</span><br><span class="line">./test/subdir</span><br></pre></td></tr></table></figure></p>
+<p>在上面的示例中我们找到了所有扩展名不是 php 的文件和文件夹。我们也可以使用感叹号 ! 来代替 -not。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">find ./test ! -name &quot;*.php&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="5-结合多个查找条件"><a href="#5-结合多个查找条件" class="headerlink" title="5. 结合多个查找条件"></a>5. 结合多个查找条件</h5><p>我们可以同时使用多个查找条件来指定文件名并排除某些文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -name &apos;abc*&apos; ! -name &apos;*.php&apos;</span><br><span class="line">./test/abc.txt</span><br><span class="line">./test/abc</span><br></pre></td></tr></table></figure></p>
+<p>上面的命令查找所有以 abc 开头并且不含 .php 扩展名的文件。这个示例展现了 find 命令自带的查找表达式是多么的强大。</p>
+<h4 id="OR-操作符"><a href="#OR-操作符" class="headerlink" title="OR 操作符"></a>OR 操作符</h4><p>当我们使用多个查找条件时， find 命令会将它们通过 AND 操作符结合起来，也就是说，只有满足所有条件的文件才会被列出。不过，如果我们需要进行基于 OR 运算的查找时，可以加上 -o 开关。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find -name &apos;*.php&apos; -o -name &apos;*.txt&apos;</span><br><span class="line">./abc.txt</span><br><span class="line">./subdir/how.php</span><br><span class="line">./abc.php</span><br><span class="line">./cool.php</span><br></pre></td></tr></table></figure></p>
+<p>上面的命令查找所有以 .php 结尾或者以 .txt 结尾的文件。</p>
+<h5 id="6-只查找文件或目录"><a href="#6-只查找文件或目录" class="headerlink" title="6. 只查找文件或目录"></a>6. 只查找文件或目录</h5><p>有时我们只想通过某个名字查找对应的文件或对应的目录，我们可以很容易实现这个要求。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -name abc*</span><br><span class="line">./test/abc.txt</span><br><span class="line">./test/abc</span><br></pre></td></tr></table></figure></p>
+<p><strong>只查找文件</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -type f -name &quot;abc*&quot;</span><br><span class="line">./test/abc.txt</span><br></pre></td></tr></table></figure></p>
+<p><strong>只查找目录</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test -type d -name &quot;abc*&quot;</span><br><span class="line">./test/abc</span><br></pre></td></tr></table></figure></p>
+<p>非常有用而且方便！</p>
+<h5 id="7-同时在多个目录下查找"><a href="#7-同时在多个目录下查找" class="headerlink" title="7. 同时在多个目录下查找"></a>7. 同时在多个目录下查找</h5><p>如果你想要在两个不同的目录内进行查找，命令非常简单。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ./test ./dir2 -type f -name &quot;abc*&quot;</span><br><span class="line">./test/abc.txt</span><br><span class="line">./dir2/abcdefg.txt</span><br></pre></td></tr></table></figure></p>
+<p>检查一下，它确实列出了来自给定的两个目录的文件。</p>
+<h5 id="8-查找隐藏文件"><a href="#8-查找隐藏文件" class="headerlink" title="8. 查找隐藏文件"></a>8. 查找隐藏文件</h5><p>在Linux系统中，隐藏文件的名字以英文的句号开头，即 . 。所以要列出隐藏文件，只需加上简单的文件名过滤条件就行了。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ~ -type f -name &quot;.*&quot;</span><br></pre></td></tr></table></figure></p>
+<p>####二、基于文件权限和属性的查找</p>
+<p>######9. 查找指定权限的文件</p>
+<p>通过指定 perm 选项，我们可以查找具有特定权限的文件。下面的示例中查找了所有具有 0664 权限的文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find . -type f -perm 0664</span><br><span class="line">./abc.txt</span><br><span class="line">./subdir/how.php</span><br><span class="line">./abc.php</span><br><span class="line">./cool.php</span><br></pre></td></tr></table></figure></p>
+<p>我们可以用这个命令来查找带有错误权限的文件，这些文件可能会产生安全问题。</p>
+<p>可以结合 反向查找 来进行权限检查。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find . -type f ! -perm 0777</span><br><span class="line">./abc.txt</span><br><span class="line">./subdir/how.php</span><br><span class="line">./abc.php</span><br><span class="line">./cool.php</span><br></pre></td></tr></table></figure></p>
+<h5 id="10-查找具有-SGID-SUID-属性的文件"><a href="#10-查找具有-SGID-SUID-属性的文件" class="headerlink" title="10. 查找具有 SGID/SUID 属性的文件"></a>10. 查找具有 SGID/SUID 属性的文件</h5><p>下面的命令查找所有具有 644 权限和 SGID 属性的文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find / -perm 2644</span><br></pre></td></tr></table></figure></p>
+<p>我们同样可以使用 1664 来查找设置了 粘滞位 （sticky bit）的文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find / -perm 1644</span><br></pre></td></tr></table></figure></p>
+<p>perm 选项除了接受数值型参数外，同样接受 chmod 命令中的模式串。在下面的查找中，我们用另一种语法来代替数字。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find / -maxdepth 2 -perm /u=s 2&gt;/dev/null</span><br><span class="line">/bin/mount</span><br><span class="line">/bin/su</span><br><span class="line">/bin/ping6</span><br><span class="line">/bin/fusermount</span><br><span class="line">/bin/ping</span><br><span class="line">/bin/umount</span><br><span class="line">/sbin/mount.ecryptfs_private</span><br></pre></td></tr></table></figure></p>
+<p>注意：由于权限不足，某些目录会拒接访问。命令中的 2&gt;/dev/null 正是用于清除输出中的错误访问结果。</p>
+<h5 id="11-查找只读文件"><a href="#11-查找只读文件" class="headerlink" title="11. 查找只读文件"></a>11. 查找只读文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find /etc -maxdepth 1 -perm /u=r</span><br><span class="line">/etc</span><br><span class="line">/etc/thunderbird</span><br><span class="line">/etc/brltty</span><br><span class="line">/etc/dkms</span><br><span class="line">/etc/phpmyadmin</span><br><span class="line">... output truncated ...</span><br></pre></td></tr></table></figure>
+<h5 id="12-查找可执行文件"><a href="#12-查找可执行文件" class="headerlink" title="12. 查找可执行文件"></a>12. 查找可执行文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find /bin -maxdepth 2 -perm /a=x</span><br><span class="line">/bin</span><br><span class="line">/bin/preseed_command</span><br><span class="line">/bin/mount</span><br><span class="line">/bin/zfgrep</span><br><span class="line">/bin/tempfile</span><br><span class="line">... output truncated ...</span><br></pre></td></tr></table></figure>
+<h4 id="三、基于文件拥有者和用户组的查找"><a href="#三、基于文件拥有者和用户组的查找" class="headerlink" title="三、基于文件拥有者和用户组的查找"></a>三、基于文件拥有者和用户组的查找</h4><h5 id="13-查找属于特定用户的文件"><a href="#13-查找属于特定用户的文件" class="headerlink" title="13. 查找属于特定用户的文件"></a>13. 查找属于特定用户的文件</h5><p>查找当前目录下，属于 bob 的文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find . -user bob</span><br><span class="line">.</span><br><span class="line">./abc.txt</span><br><span class="line">./abc</span><br><span class="line">./subdir</span><br><span class="line">./subdir/how.php</span><br><span class="line">./abc.php</span><br></pre></td></tr></table></figure></p>
+<p>在指定所属用户的同时，我们同样可以指定文件名。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find . -user bob -name &apos;*.php&apos;</span><br></pre></td></tr></table></figure></p>
+<p>很容易看出，我们可以通过增加过滤条件来缩小查找文件的范围。</p>
+<h5 id="14-查找属于特定用户组的文件"><a href="#14-查找属于特定用户组的文件" class="headerlink" title="14. 查找属于特定用户组的文件"></a>14. 查找属于特定用户组的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find /var/www -group developer</span><br></pre></td></tr></table></figure>
+<h4 id="四、基于日期和时间的查找"><a href="#四、基于日期和时间的查找" class="headerlink" title="四、基于日期和时间的查找"></a>四、基于日期和时间的查找</h4><p>除了上面介绍的查找条件外，另外一个非常棒的查找条件就是文件的修改和访问时间（日期）。当我们想要找出哪些文件在某段时间内被修改的时候，这个查找条件将会非常方便。我们来看几个例子。</p>
+<h5 id="15-查找过去的第-N-天被修改过的文件"><a href="#15-查找过去的第-N-天被修改过的文件" class="headerlink" title="15. 查找过去的第 N 天被修改过的文件"></a>15. 查找过去的第 N 天被修改过的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find / -mtime 50</span><br></pre></td></tr></table></figure>
+<h5 id="16-查找过去的-N-天内被访问过的文件"><a href="#16-查找过去的-N-天内被访问过的文件" class="headerlink" title="16. 查找过去的 N 天内被访问过的文件"></a>16. 查找过去的 N 天内被访问过的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find / -atime -50</span><br></pre></td></tr></table></figure>
+<h5 id="17-查找某段时间范围内被修改过内容的文件"><a href="#17-查找某段时间范围内被修改过内容的文件" class="headerlink" title="17. 查找某段时间范围内被修改过内容的文件"></a>17. 查找某段时间范围内被修改过内容的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find / -mtime +50 -mtime -100</span><br></pre></td></tr></table></figure>
+<h5 id="18-查找过去的-N-分钟内状态发生改变的文件"><a href="#18-查找过去的-N-分钟内状态发生改变的文件" class="headerlink" title="18. 查找过去的 N 分钟内状态发生改变的文件"></a>18. 查找过去的 N 分钟内状态发生改变的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find /home/bob -cmin -60</span><br></pre></td></tr></table></figure>
+<h5 id="19-查找过去的-1-小时内被修改过内容的文件"><a href="#19-查找过去的-1-小时内被修改过内容的文件" class="headerlink" title="19. 查找过去的 1 小时内被修改过内容的文件"></a>19. 查找过去的 1 小时内被修改过内容的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find / -mmin -60</span><br></pre></td></tr></table></figure>
+<h5 id="20-查找过去的-1-小时内被访问过的文件"><a href="#20-查找过去的-1-小时内被访问过的文件" class="headerlink" title="20. 查找过去的 1 小时内被访问过的文件"></a>20. 查找过去的 1 小时内被访问过的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find / -amin -60</span><br></pre></td></tr></table></figure>
+<h4 id="五、基于文件大小的查找"><a href="#五、基于文件大小的查找" class="headerlink" title="五、基于文件大小的查找"></a>五、基于文件大小的查找</h4><h5 id="21-查找指定大小的文件"><a href="#21-查找指定大小的文件" class="headerlink" title="21. 查找指定大小的文件"></a>21. 查找指定大小的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find / -size 50M</span><br></pre></td></tr></table></figure>
+<h5 id="22-查找大小在一定范围内的文件"><a href="#22-查找大小在一定范围内的文件" class="headerlink" title="22. 查找大小在一定范围内的文件"></a>22. 查找大小在一定范围内的文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find / -size +50M -size -100M</span><br></pre></td></tr></table></figure>
+<h5 id="23-查找最大和最小的文件"><a href="#23-查找最大和最小的文件" class="headerlink" title="23. 查找最大和最小的文件"></a>23. 查找最大和最小的文件</h5><p>我们可以将 find 命令与 ls 和 sort命令结合，从而找出最大或最小的文件。</p>
+<p>下面的命令使用了 sort 命令的 -r 选项，也就是从大到小降序排列。经过 head 命令的过滤之后，会显示当前目录和子目录下最大的5个文件。命令的执行过程需要一段时间，查找的速度取决于文件的总数。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find . -type f -exec ls -s &#123;&#125; \; | sort -n -r | head 5</span><br></pre></td></tr></table></figure></p>
+<p>同样，我们可以去掉 sort 命令的 -r 选项来进行升序排列，从而显示出最小的5个文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find . -type f -exec ls -s &#123;&#125; \; | sort -n | head 5</span><br></pre></td></tr></table></figure></p>
+<h5 id="24-查找空文件和空目录"><a href="#24-查找空文件和空目录" class="headerlink" title="24. 查找空文件和空目录"></a>24. 查找空文件和空目录</h5><p>查找空文件：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># find /tmp -type f -empty</span><br></pre></td></tr></table></figure></p>
+<p>查找空目录：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find ~/ -type d -empty</span><br></pre></td></tr></table></figure></p>
+<p>非常简单！</p>
+<h4 id="六、高级操作"><a href="#六、高级操作" class="headerlink" title="六、高级操作"></a>六、高级操作</h4><p>find 命令不仅可以通过特定条件来查找文件，还可以对查找到的文件使用任意linux命令进行操作。下面给出两个例子。</p>
+<h5 id="25-使用-ls-命令列出文件信息"><a href="#25-使用-ls-命令列出文件信息" class="headerlink" title="25. 使用 ls 命令列出文件信息"></a>25. 使用 ls 命令列出文件信息</h5><p>我们使用 find 命令找到文件后，只能看到文件路径。如果想进一步查看文件信息，可以结合 ls 命令来实现。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find . -exec ls -ld &#123;&#125; \;</span><br><span class="line">drwxrwxr-x 4 enlightened enlightened 4096 Aug 11 19:01 .</span><br><span class="line">-rw-rw-r-- 1 enlightened enlightened 0 Aug 11 16:25 ./abc.txt</span><br><span class="line">drwxrwxr-x 2 enlightened enlightened 4096 Aug 11 16:48 ./abc</span><br><span class="line">drwxrwxr-x 2 enlightened enlightened 4096 Aug 11 16:26 ./subdir</span><br><span class="line">-rw-rw-r-- 1 enlightened enlightened 0 Aug 11 16:26 ./subdir/how.php</span><br><span class="line">-rw-rw-r-- 1 enlightened enlightened 29 Aug 11 19:13 ./abc.php</span><br><span class="line">-rw-rw-r-- 1 enlightened enlightened 0 Aug 11 16:25 ./cool.php</span><br></pre></td></tr></table></figure></p>
+<h5 id="26-删除找到的文件"><a href="#26-删除找到的文件" class="headerlink" title="26. 删除找到的文件"></a>26. 删除找到的文件</h5><p>下面的命令会删除 tmp 目录下扩展名为 .txt 的文件。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find /tmp -type f -name &quot;*.txt&quot; -exec rm -f &#123;&#125; \;</span><br></pre></td></tr></table></figure></p>
+<p>我们同样可以删除目录，只要把 -type 后面的 f 改为 d ，并且在 rm 命令后面加上 -r 即可。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ find /tmp -type d -name &quot;dirToRemove&quot; -exec rm -r -f &#123;&#125; \;</span><br></pre></td></tr></table></figure></p>
+<p><strong>原文来自：<a href="http://www.codebelief.com/article/2017/02/26-examples-of-find-command-on-linux/" target="_blank" rel="noopener">http://www.codebelief.com/article/2017/02/26-examples-of-find-command-on-linux/</a></strong></p>
+
+      
+
+      
+      
+	       <div class="declare">
+             <strong>本文作者：</strong>Yong YUE
+             <br>
+	           <strong>本文链接：</strong>
+	           <a href="https://www.yueyongblog.com/26-examples-of-find-command-on-linux.html">https://www.yueyongblog.com/26-examples-of-find-command-on-linux.html</a>
+	            <br>
+	            <strong>版权声明：</strong>本作品采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 进行许可。转载请注明出处！
+	            <br>
+              <!--
+              <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src=""/></a>
+              -->
+	       </div>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/Alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/WeChat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -261,95 +366,150 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://www.yueyongblog.com/26-examples-of-find-command-on-linux.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/Markdown-use.html" class="archive-article-date">
-  	<time datetime="2018-05-29T16:23:44.070Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-30</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/awk-command.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          如何在Linux中使用awk工具详解
+        
+      </div>
+    </a>
+  
+  
+    <a href="/Markdown-use.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Markdown的常用语法总结</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Markdown-use.html">Markdown的常用语法总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、基本用法"><span class="toc-number">1.</span> <span class="toc-text">一、基本用法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-列出当前目录和子目录下的所有文件"><span class="toc-number">1.1.</span> <span class="toc-text">1.列出当前目录和子目录下的所有文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-查找特殊的目录或路径"><span class="toc-number">1.2.</span> <span class="toc-text">2. 查找特殊的目录或路径</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#忽略大小写"><span class="toc-number">1.3.</span> <span class="toc-text">忽略大小写</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-限制目录查找的深度"><span class="toc-number">1.4.</span> <span class="toc-text">3. 限制目录查找的深度</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-反向查找"><span class="toc-number">1.5.</span> <span class="toc-text">4. 反向查找</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-结合多个查找条件"><span class="toc-number">1.6.</span> <span class="toc-text">5. 结合多个查找条件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OR-操作符"><span class="toc-number">2.</span> <span class="toc-text">OR 操作符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#6-只查找文件或目录"><span class="toc-number">2.1.</span> <span class="toc-text">6. 只查找文件或目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-同时在多个目录下查找"><span class="toc-number">2.2.</span> <span class="toc-text">7. 同时在多个目录下查找</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#8-查找隐藏文件"><span class="toc-number">2.3.</span> <span class="toc-text">8. 查找隐藏文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#10-查找具有-SGID-SUID-属性的文件"><span class="toc-number">2.4.</span> <span class="toc-text">10. 查找具有 SGID/SUID 属性的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#11-查找只读文件"><span class="toc-number">2.5.</span> <span class="toc-text">11. 查找只读文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#12-查找可执行文件"><span class="toc-number">2.6.</span> <span class="toc-text">12. 查找可执行文件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、基于文件拥有者和用户组的查找"><span class="toc-number">3.</span> <span class="toc-text">三、基于文件拥有者和用户组的查找</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#13-查找属于特定用户的文件"><span class="toc-number">3.1.</span> <span class="toc-text">13. 查找属于特定用户的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#14-查找属于特定用户组的文件"><span class="toc-number">3.2.</span> <span class="toc-text">14. 查找属于特定用户组的文件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#四、基于日期和时间的查找"><span class="toc-number">4.</span> <span class="toc-text">四、基于日期和时间的查找</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#15-查找过去的第-N-天被修改过的文件"><span class="toc-number">4.1.</span> <span class="toc-text">15. 查找过去的第 N 天被修改过的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#16-查找过去的-N-天内被访问过的文件"><span class="toc-number">4.2.</span> <span class="toc-text">16. 查找过去的 N 天内被访问过的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#17-查找某段时间范围内被修改过内容的文件"><span class="toc-number">4.3.</span> <span class="toc-text">17. 查找某段时间范围内被修改过内容的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#18-查找过去的-N-分钟内状态发生改变的文件"><span class="toc-number">4.4.</span> <span class="toc-text">18. 查找过去的 N 分钟内状态发生改变的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#19-查找过去的-1-小时内被修改过内容的文件"><span class="toc-number">4.5.</span> <span class="toc-text">19. 查找过去的 1 小时内被修改过内容的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20-查找过去的-1-小时内被访问过的文件"><span class="toc-number">4.6.</span> <span class="toc-text">20. 查找过去的 1 小时内被访问过的文件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#五、基于文件大小的查找"><span class="toc-number">5.</span> <span class="toc-text">五、基于文件大小的查找</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#21-查找指定大小的文件"><span class="toc-number">5.1.</span> <span class="toc-text">21. 查找指定大小的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#22-查找大小在一定范围内的文件"><span class="toc-number">5.2.</span> <span class="toc-text">22. 查找大小在一定范围内的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#23-查找最大和最小的文件"><span class="toc-number">5.3.</span> <span class="toc-text">23. 查找最大和最小的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#24-查找空文件和空目录"><span class="toc-number">5.4.</span> <span class="toc-text">24. 查找空文件和空目录</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#六、高级操作"><span class="toc-number">6.</span> <span class="toc-text">六、高级操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#25-使用-ls-命令列出文件信息"><span class="toc-number">6.1.</span> <span class="toc-text">25. 使用 ls 命令列出文件信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#26-删除找到的文件"><span class="toc-number">6.2.</span> <span class="toc-text">26. 删除找到的文件</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/hello-blog.html" class="archive-article-date">
-  	<time datetime="2018-05-29T15:49:56.306Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/hello-blog.html">Hello World —— My Blog！</a>
-    </h1>
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNzYyMi8xNDE1Mw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -401,8 +561,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
