@@ -1,0 +1,33 @@
+# .travis.yml
+language: node_js  #指定的语言环境
+node_js: stable    # 设置相应版本
+
+# S: Build Lifecycle
+install:
+  - npm install    # 安装hexo及插件
+
+
+#before_script:
+ # - npm install -g gulp
+
+# 执行清缓存，生成网页操作
+script:
+  - hexo clean
+  - hexo generate
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "RonnyK135"             # 填写你的GitHub用户名
+  - git config user.email "963832758@qq.com"          # 填写你的GitHub注册邮箱
+  - git add .
+  - git commit -m "Travis CI Auto Builder"
+  - git push --force --quiet "https://${GIT_REPO_TOKEN}@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master                                # 此处为源文件所在的仓库分支，默认master
+env:
+ global:
+   - GH_REF: github.com/RonnyK135/RonnyK135.github.io.git       # 此处为静态文件仓库，也就是你设定GitHub Pages的仓库地址
