@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://www.yueyongblog.com">
-  <title>Markdown的常用语法总结 | Yue Yong&#39;s Blog</title>
+  <title>浅显易懂的grep命令详解 | Yue Yong&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Markdown">
+  <meta name="description" content="grep (global search regular expression(RE) and print out the line,全面搜索正则表达式并把行打印出来)是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。">
+<meta name="keywords" content="Linux,grep">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown的常用语法总结">
-<meta property="og:url" content="https://www.yueyongblog.com/Markdown-use.html">
+<meta property="og:title" content="浅显易懂的grep命令详解">
+<meta property="og:url" content="https://www.yueyongblog.com/grep-command.html">
 <meta property="og:site_name" content="Yue Yong&#39;s Blog">
+<meta property="og:description" content="grep (global search regular expression(RE) and print out the line,全面搜索正则表达式并把行打印出来)是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3275724-090129e5e0ae2657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3275724-8fea54b4fef2cec2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-06-29T07:58:03.453Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3275724-7bf902884b0f7d91.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-07-22T04:46:00.727Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown的常用语法总结">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/3275724-090129e5e0ae2657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="浅显易懂的grep命令详解">
+<meta name="twitter:description" content="grep (global search regular expression(RE) and print out the line,全面搜索正则表达式并把行打印出来)是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3275724-7bf902884b0f7d91.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="Yue Yong&#39;s Blog" type="application/atom+xml">
   
@@ -177,7 +179,7 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Markdown-use" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-grep-command" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -185,14 +187,14 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      Markdown的常用语法总结
+      浅显易懂的grep命令详解
     </h1>
   
 
 
         
-        <a href="/Markdown-use.html" class="archive-article-date">
-  	<time datetime="2018-05-29T16:23:44.070Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-30</time>
+        <a href="/grep-command.html" class="archive-article-date">
+  	<time datetime="2018-07-22T04:18:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-22</time>
 </a>
         
         <div>
@@ -208,7 +210,7 @@ var _hmt = _hmt || [];
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1,074字</span>
+        <span class="post-count">3,457字</span>
       </span>
     </span>
 
@@ -217,7 +219,7 @@ var _hmt = _hmt || [];
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">4分</span>
+        <span class="post-count">15分</span>
       </span>
     </span>
 </div>
@@ -231,77 +233,94 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
 
       
-        <p><img src="http://upload-images.jianshu.io/upload_images/3275724-090129e5e0ae2657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+        <p>grep (global search regular expression(RE) and print out the line,全面搜索正则表达式并把行打印出来)是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3275724-7bf902884b0f7d91.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="small_linux_grep_command.jpg"></p>
 <a id="more"></a>
-<h4 id="Markdown是什么？"><a href="#Markdown是什么？" class="headerlink" title="Markdown是什么？"></a>Markdown是什么？</h4><p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。 其中最重要的设计是可读性，也就是说这个语言应该要能直接在字面上的被阅读，而不用被一些格式化指令标记(像是 RTF 与 HTML)。</p>
-<p>下面总结一下Markdown常用的基础语法，让你快速掌握，并运用。</p>
-<h4 id="Markdown的优点："><a href="#Markdown的优点：" class="headerlink" title="Markdown的优点："></a>Markdown的优点：</h4><p>1.纯文本，所以兼容性极强，可以用所有文本编辑器打开。<br>2.让你专注于文字而不是排版。<br>3.格式转换方便，Markdown 的文本你可以轻松转换为 html、电子书等。<br>4.Markdown 的标记语法有极好的可读性。</p>
-<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一级标题             //表示是一级标题或使用&lt;h1&gt;</span><br><span class="line">## 二级标题            //表示是二级标题或使用&lt;h2&gt;</span><br><span class="line">### 三级标题           //表示是三级标题或使用&lt;h3&gt;</span><br><span class="line">#### 四级标题          //表示是四级标题或使用&lt;h4&gt;</span><br><span class="line">……</span><br></pre></td></tr></table></figure>
-<p>在所需的文字前面加上<code>#</code>号和空格符，注意<code>#</code>号后面的空格，也可以使用HTML代码表示标题，这里不详解。</p>
-<h4 id="粗体和斜体"><a href="#粗体和斜体" class="headerlink" title="粗体和斜体"></a>粗体和斜体</h4><p>用一个<code>*</code>或者<code>_</code>包含起来表示斜体；<br>显示效果如下：<br><em>强调</em>  或者  _强调_</p>
-<p>用两个<code>**</code> 和<code>__</code>包含起来表示粗体；<br>显示效果如下：<br><strong>加重强调</strong> 或者 <strong>加重强调</strong></p>
-<p>用三个<code>***</code> 或者<code>___</code>表示粗斜体；<br>显示效果如下：<br><strong><em>强调</em></strong>  <strong>_强调_</strong></p>
-<p>使用两个<code>~~</code>表示删除；<br><del>删除</del></p>
-<h4 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h4><p>在Markdown中，插入链接直接使用<code>[显示文本](链接地址)</code>这样的语法即可，例如：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[YueYong&apos;s Blog](http://yueyongblog.com)</span><br></pre></td></tr></table></figure></p>
-<p>显示效果如下：<br><a href="http://yueyongblog.com" target="_blank" rel="noopener">YueYong’s Blog</a></p>
-<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>插入图片使用<code>![](图片链接地址)</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![这里描述信息](http://upload-images.jianshu.io/upload_images/3275724-8fea54b4fef2cec2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</span><br></pre></td></tr></table></figure></p>
-<p>显示效果如下：<br><img src="http://upload-images.jianshu.io/upload_images/3275724-8fea54b4fef2cec2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>列表格式也很常用，只需要在文字前面加上<code>-</code> 就可以了，例如：</p>
-<p><strong>无序列表：</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- 文本1</span><br><span class="line">- 文本2</span><br><span class="line">- 文本3</span><br></pre></td></tr></table></figure></p>
-<p>显示效果如下：</p>
-<ul>
-<li>文本1</li>
-<li>文本2</li>
-<li>文本3</li>
-</ul>
-<p><strong>有序列表：</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 文本1</span><br><span class="line">2. 文本2</span><br><span class="line">3. 文本3</span><br></pre></td></tr></table></figure></p>
-<p>显示效果如下：<br>1.文本1<br>2.文本2<br>3.文本3</p>
-<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p>在写作的过程中会引用别人的文字，或者在文章末尾用到，需要在文章前面加上<code>&gt;</code>和空格字符就好了。</p>
-<p>显示效果如下：</p>
-<blockquote>
-<p>人生如梦，岁月无情，豁然回首，才发现人活着是一种心情，穷也好，富也好；得也好，失也好，一切都是过眼云烟。想想不管昨天、今天、明天。能豁然开朗就是美好的一天。不管亲情，友情，爱情。能永远珍惜就是好心情。记得有位朋友说过这样的话：“曾经拥有的不要忘记，已经得到的更加珍惜，属于自己的不要放弃，已经失去的留作回忆，想要得到，一定要努力。</p>
-</blockquote>
-<h4 id="代码块的引用"><a href="#代码块的引用" class="headerlink" title="代码块的引用"></a>代码块的引用</h4><p>当编写代码时,需要时代码的引用，使用三个<code>```</code>,table上面那个按键，<br>还可以单独使用一个<code>`</code> 包含需要的文字或单词、代码等；<br>显示效果如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hello world!</span><br><span class="line">Life is short, I learn python</span><br><span class="line">This is YueYong&apos;s blog</span><br></pre></td></tr></table></figure>
-<p><code>world</code></p>
-<h4 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h4><p>在编写一段文字的时候，需要另起一段，使用Eenter按键直接换行，或者使用<code>br</code>标签</p>
-<h4 id="水平线"><a href="#水平线" class="headerlink" title="水平线"></a>水平线</h4><p>可以在单独一行里输入3个或以上的短横线、星号或者下划线均可实现；<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* * *</span><br><span class="line">***</span><br><span class="line">*****</span><br><span class="line">- - -</span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure></p>
-<p>显示效果如下：</p>
-<hr>
-<hr>
-<h4 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表:"></a>任务列表:</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-  [x] 任务1，已完成;</span><br><span class="line">-  [x] 任务2，已完成;</span><br><span class="line">-  [ ] 任务3，未完成;</span><br></pre></td></tr></table></figure>
-<p>显示效果如下：</p>
-<ul>
-<li style="list-style: none"><input type="checkbox" checked> 任务1，已完成;</li>
-<li style="list-style: none"><input type="checkbox" checked> 任务2，已完成;</li>
-<li style="list-style: none"><input type="checkbox"> 任务3，未完成;</li>
-</ul>
-<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p>:— 表示居左，即默认格式， :—: 表示居中，—: 表示居右；</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| 姓名| 性别 | 年龄 |</span><br><span class="line">|:-----|:-----:|-----:|</span><br><span class="line">| 张三 | 男   | 18 |</span><br><span class="line">| 李四 | 女   | 17 |</span><br></pre></td></tr></table></figure>
-<p>显示效果如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">姓名</th>
-<th style="text-align:center">性别</th>
-<th style="text-align:right">年龄</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">张三</td>
-<td style="text-align:center">男</td>
-<td style="text-align:right">18</td>
-</tr>
-<tr>
-<td style="text-align:left">李四</td>
-<td style="text-align:center">女</td>
-<td style="text-align:right">17</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<h4 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h4><p><a href="http://www.jianshu.com/p/q81RER#" target="_blank" rel="noopener">献给写作者的 Markdown 新手指南</a><br><a href="http://wowubuntu.com/markdown/" target="_blank" rel="noopener">Markdown 语法说明 (简体中文版)</a></p>
+<p>Unix的grep家族包括grep、egrep和fgrep。egrep和fgrep的命令只跟grep有很小不同。egrep是grep的扩展，支持更多的re元字符， fgrep就是fixed grep或fast grep，它们把所有的字母都看作单词，也就是说，正则表达式中的元字符表示回其自身的字面意义，不再特殊。linux使用GNU版本的grep。它功能更强，可以通过-G、-E、-F命令行选项来使用egrep和fgrep的功能。</p>
+<h4 id="grep常用用法"><a href="#grep常用用法" class="headerlink" title="grep常用用法"></a>grep常用用法</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep [-acinv] [--color=auto] &apos;搜寻字符串&apos; filename</span><br><span class="line">选项与参数：</span><br><span class="line">-a ：将 binary 文件以 text 文件的方式搜寻数据</span><br><span class="line">-c ：计算找到 &apos;搜寻字符串&apos; 的次数</span><br><span class="line">-i ：忽略大小写的不同，所以大小写视为相同</span><br><span class="line">-n ：顺便输出行号</span><br><span class="line">-v ：反向选择，亦即显示出没有 &apos;搜寻字符串&apos; 内容的那一行！</span><br><span class="line">--color=auto ：可以将找到的关键词部分加上颜色的显示喔！</span><br></pre></td></tr></table></figure>
+<p>将/etc/passwd，有出现 root 的行取出来</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># grep root /etc/passwd</span><br><span class="line">root:x:0:0:root:/root:/bin/bash</span><br><span class="line">operator:x:11:0:operator:/root:/sbin/nologin</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cat /etc/passwd | grep root </span><br><span class="line">root:x:0:0:root:/root:/bin/bash</span><br><span class="line">operator:x:11:0:operator:/root:/sbin/nologin</span><br></pre></td></tr></table></figure>
+<p>将/etc/passwd，有出现 root 的行取出来,同时显示这些行在/etc/passwd的行号</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># grep -n root /etc/passwd</span><br><span class="line">1:root:x:0:0:root:/root:/bin/bash</span><br><span class="line">30:operator:x:11:0:operator:/root:/sbin/nologin</span><br></pre></td></tr></table></figure>
+<p>在关键字的显示方面，grep 可以使用 –color=auto 来将关键字部分使用颜色显示。 这可是个很不错的功能啊！但是如果每次使用 grep 都得要自行加上 –color=auto 又显的很麻烦～ 此时那个好用的 alias 就得来处理一下啦！你可以在 ~/.bashrc 内加上这行：『alias grep=’grep –color=auto’』再以『 source ~/.bashrc 』来立即生效即可喔！ 这样每次运行 grep 他都会自动帮你加上颜色显示啦</p>
+<p>将/etc/passwd，将没有出现 root 的行取出来</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># grep -v root /etc/passwd</span><br><span class="line">root:x:0:0:root:/root:/bin/bash</span><br><span class="line">operator:x:11:0:operator:/root:/sbin/nologin</span><br></pre></td></tr></table></figure>
+<p>将/etc/passwd，将没有出现 root 和nologin的行取出来</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># grep -v root /etc/passwd | grep -v nologin</span><br><span class="line">root:x:0:0:root:/root:/bin/bash</span><br><span class="line">operator:x:11:0:operator:/root:/sbin/nologin</span><br></pre></td></tr></table></figure>
+<p>用 dmesg 列出核心信息，再以 grep 找出内含 eth 那行,要将捉到的关键字显色，且加上行号来表示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# dmesg | grep -n --color=auto &apos;eth&apos;</span><br><span class="line">247:eth0: RealTek RTL8139 at 0xee846000, 00:90:cc:a6:34:84, IRQ 10</span><br><span class="line">248:eth0: Identified 8139 chip type &apos;RTL-8139C&apos;</span><br><span class="line">294:eth0: link up, 100Mbps, full-duplex, lpa 0xC5E1305:eth0: no IPv6 routers present</span><br><span class="line"># 你会发现除了 eth 会有特殊颜色来表示之外，最前面还有行号喔！</span><br></pre></td></tr></table></figure>
+<p>在关键字的显示方面，grep 可以使用 –color=auto 来将关键字部分使用颜色显示。 这可是个很不错的功能啊！但是如果每次使用 grep 都得要自行加上 –color=auto 又显的很麻烦～ 此时那个好用的 alias 就得来处理一下啦！你可以在 ~/.bashrc 内加上这行：『alias grep=’grep –color=auto’』再以『 source ~/.bashrc 』来立即生效即可喔！ 这样每次运行 grep 他都会自动帮你加上颜色显示啦</p>
+<p>用 dmesg 列出核心信息，再以 grep 找出内含 eth 那行,在关键字所在行的前两行与后三行也一起捉出来显示</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# dmesg | grep -n -A3 -B2 --color=auto &apos;eth&apos;</span><br><span class="line">245-PCI: setting IRQ 10 as level-triggered</span><br><span class="line">246-ACPI: PCI Interrupt 0000:00:0e.0[A] -&gt; Link [LNKB] ...</span><br><span class="line">247:eth0: RealTek RTL8139 at 0xee846000, 00:90:cc:a6:34:84, IRQ 10</span><br><span class="line">248:eth0: Identified 8139 chip type &apos;RTL-8139C&apos;</span><br><span class="line">249-input: PC Speaker as /class/input/input2</span><br><span class="line">250-ACPI: PCI Interrupt 0000:00:01.4[B] -&gt; Link [LNKB] ...</span><br><span class="line">251-hdb: ATAPI 48X DVD-ROM DVD-R-RAM CD-R/RW drive, 2048kB Cache, UDMA(66)</span><br><span class="line"># 如上所示，你会发现关键字 247 所在的前两行及 248 后三行也都被显示出来！# 这样可以让你将关键字前后数据捉出来进行分析啦！</span><br></pre></td></tr></table></figure>
+<h5 id="根据文件内容递归查找目录"><a href="#根据文件内容递归查找目录" class="headerlink" title="根据文件内容递归查找目录"></a>根据文件内容递归查找目录</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># grep ‘energywise’ *           #在当前目录搜索带&apos;energywise&apos;行的文件</span><br><span class="line"># grep -r ‘energywise’ *        #在当前目录及其子目录下搜索&apos;energywise&apos;行的文件</span><br><span class="line"># grep -l -r ‘energywise’ *     #在当前目录及其子目录下搜索&apos;energywise&apos;行的文件，但是不显示匹配的行，只显示匹配的文件</span><br></pre></td></tr></table></figure>
+<p>这几个命令很实用，是查找文件的利器。</p>
+<h4 id="grep与正则表达式"><a href="#grep与正则表达式" class="headerlink" title="grep与正则表达式"></a>grep与正则表达式</h4><h5 id="字符类"><a href="#字符类" class="headerlink" title="字符类"></a>字符类</h5><p>字符类的搜索：如果我想要搜寻 test 或 taste 这两个单词时，可以发现到，其实她们有共通的 ‘t?st’ 存在～这个时候，我可以这样来搜寻：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;t[ae]st&apos; regular_express.txt</span><br><span class="line">8:I can&apos;t finish the test.9:Oh! The soup taste good.</span><br></pre></td></tr></table></figure>
+<p>其实 [] 里面不论有几个字节，他都谨代表某『一个』字节， 所以，上面的例子说明了，我需要的字串是『tast』或『test』两个字串而已！</p>
+<p>字符类的反向选择 [^] ：如果想要搜索到有 oo 的行，但不想要 oo 前面有 g，如下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;[^g]oo&apos; regular_express.txt</span><br><span class="line">2:apple is my favorite food.</span><br><span class="line">3:Football game is not use feet only.</span><br><span class="line">18:google is the best tools for search keyword.</span><br><span class="line">19:goooooogle yes!</span><br></pre></td></tr></table></figure>
+<p>第 2,3 行没有疑问，因为 foo 与 Foo 均可被接受！</p>
+<p>但是第 18 行明明有 google 的 goo 啊～别忘记了，因为该行后面出现了 tool 的 too 啊！所以该行也被列出来～ 也就是说， 18 行里面虽然出现了我们所不要的项目 (goo) 但是由於有需要的项目 (too) ， 因此，是符合字串搜寻的喔！</p>
+<p>至於第 19 行，同样的，因为 goooooogle 里面的 oo 前面可能是 o ，例如： go(ooo)oogle ，所以，这一行也是符合需求的！</p>
+<p>字符类的连续：再来，假设我 oo 前面不想要有小写字节，所以，我可以这样写 [^abcd….z]oo ， 但是这样似乎不怎么方便，由於小写字节的 ASCII 上编码的顺序是连续的， 因此，我们可以将之简化为底下这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;[^a-z]oo&apos; regular_express.txt</span><br><span class="line">3:Football game is not use feet only.</span><br></pre></td></tr></table></figure>
+<p>也就是说，当我们在一组集合字节中，如果该字节组是连续的，例如大写英文/小写英文/数字等等， 就可以使用[a-z],[A-Z],[0-9]等方式来书写，那么如果我们的要求字串是数字与英文呢？ 呵呵！就将他全部写在一起，变成：[a-zA-Z0-9]。</p>
+<p>我们要取得有数字的那一行，就这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;[0-9]&apos; regular_express.txt</span><br><span class="line">5:However, this dress is about $ 3183 dollars.</span><br><span class="line">15:You are the best is mean you are the no. 1.</span><br></pre></td></tr></table></figure>
+<h5 id="行首与行尾字节"><a href="#行首与行尾字节" class="headerlink" title="行首与行尾字节 ^ $"></a>行首与行尾字节 ^ $</h5><p>行首字符：如果我想要让 the 只在行首列出呢？ 这个时候就得要使用定位字节了！我们可以这样做：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;^the&apos; regular_express.txt</span><br><span class="line">12:the symbol &apos;*&apos; is represented as start.</span><br></pre></td></tr></table></figure>
+<p>此时，就只剩下第 12 行，因为只有第 12 行的行首是 the 开头啊～此外， 如果我想要开头是小写字节的那一行就列出呢？可以这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;^[a-z]&apos; regular_express.txt</span><br><span class="line">2:apple is my favorite food.</span><br><span class="line">4:this dress doesn&apos;t fit me.10:motorcycle is cheap than car.</span><br><span class="line">12:the symbol &apos;*&apos; is represented as start.</span><br><span class="line">18:google is the best tools for search keyword.</span><br><span class="line">19:goooooogle yes!</span><br><span class="line">20:go! go! Let&apos;s go.</span><br></pre></td></tr></table></figure>
+<p>如果我不想要开头是英文字母，则可以是这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;^[^a-zA-Z]&apos; regular_express.txt</span><br><span class="line">1:&quot;Open Source&quot; is a good mechanism to develop programs.</span><br><span class="line">21:# I am VBird</span><br></pre></td></tr></table></figure>
+<p>^ 符号，在字符类符号(括号[])之内与之外是不同的！ 在 [] 内代表『反向选择』，在 [] 之外则代表定位在行首的意义！</p>
+<p>那如果我想要找出来，行尾结束为小数点 (.) 的那一行：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;\.$&apos; regular_express.txt</span><br><span class="line">1:&quot;Open Source&quot; is a good mechanism to develop programs.</span><br><span class="line">2:apple is my favorite food.</span><br><span class="line">3:Football game is not use feet only.</span><br><span class="line">4:this dress doesn&apos;t fit me.</span><br><span class="line">10:motorcycle is cheap than car.</span><br><span class="line">11:This window is clear.</span><br><span class="line">12:the symbol &apos;*&apos; is represented as start.</span><br><span class="line">15:You are the best is mean you are the no.</span><br><span class="line">16:The world &lt;Happy&gt; is the same with &quot;glad&quot;.</span><br><span class="line">17:I like dog.</span><br><span class="line">18:google is the best tools for search keyword.</span><br><span class="line">20:go! go! Let&apos;s go.</span><br></pre></td></tr></table></figure>
+<p>特别注意到，因为小数点具有其他意义(底下会介绍)，所以必须要使用转义字符()来加以解除其特殊意义！</p>
+<p>找出空白行：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;^$&apos; regular_express.txt</span><br><span class="line">22:</span><br></pre></td></tr></table></figure>
+<p>因为只有行首跟行尾 (^$)，所以，这样就可以找出空白行啦！</p>
+<h5 id="任意一个字节-与重复字节"><a href="#任意一个字节-与重复字节" class="headerlink" title="任意一个字节 . 与重复字节 *"></a>任意一个字节 . 与重复字节 *</h5><p>这两个符号在正则表达式的意义如下：</p>
+<p>. (小数点)：代表『一定有一个任意字节』的意思；* (星号)：代表『重复前一个字符， 0 到无穷多次』的意思，为组合形态</p>
+<p>假设我需要找出 g??d 的字串，亦即共有四个字节， 起头是 g 而结束是 d ，我可以这样做：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;g..d&apos; regular_express.txt</span><br><span class="line">1:&quot;Open Source&quot; is a good mechanism to develop programs.</span><br><span class="line">9:Oh! The soup taste good.</span><br><span class="line">16:The world &lt;Happy&gt; is the same with &quot;glad&quot;.</span><br></pre></td></tr></table></figure>
+<p>因为强调 g 与 d 之间一定要存在两个字节，因此，第 13 行的 god 与第 14 行的 gd 就不会被列出来啦！</p>
+<p>如果我想要列出有 oo, ooo, oooo 等等的数据， 也就是说，至少要有两个(含) o 以上，该如何是好？</p>
+<p>因为 <em> 代表的是『重复 0 个或多个前面的 RE 字符』的意义， 因此，『o\</em>』代表的是：『拥有空字节或一个 o 以上的字节』，因此，『 grep -n ‘o*’ regular_express.txt 』将会把所有的数据都列印出来终端上！</p>
+<p>当我们需要『至少两个 o 以上的字串』时，就需要 ooo* ，亦即是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;ooo*&apos; regular_express.txt</span><br><span class="line">1:&quot;Open Source&quot; is a good mechanism to develop programs.</span><br><span class="line">2:apple is my favorite food.</span><br><span class="line">3:Football game is not use feet only.</span><br><span class="line">9:Oh! The soup taste good.</span><br><span class="line">18:google is the best tools for search keyword.</span><br><span class="line">19:goooooogle yes!</span><br></pre></td></tr></table></figure>
+<p>如果我想要字串开头与结尾都是 g，但是两个 g 之间仅能存在至少一个 o ，亦即是 gog, goog, gooog…. 等等，那该如何？</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;goo*g&apos; regular_express.txt</span><br><span class="line">18:google is the best tools for search keyword.</span><br><span class="line">19:goooooogle yes!</span><br></pre></td></tr></table></figure>
+<p>如果我想要找出 g 开头与 g 结尾的行，当中的字符可有可无</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;g.*g&apos; regular_express.txt</span><br><span class="line">1:&quot;Open Source&quot; is a good mechanism to develop programs.</span><br><span class="line">14:The gd software is a library for drafting programs.</span><br><span class="line">18:google is the best tools for search keyword.</span><br><span class="line">19:goooooogle yes!</span><br><span class="line">20:go! go! Let&apos;s go.</span><br></pre></td></tr></table></figure>
+<p>因为是代表 g 开头与 g 结尾，中间任意字节均可接受，所以，第 1, 14, 20 行是可接受的喔！ 这个 .* 的 RE 表示任意字符是很常见的.</p>
+<p>如果我想要找出『任意数字』的行？因为仅有数字，所以就成为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;[0-9][0-9]*&apos; regular_express.txt</span><br><span class="line">5:However, this dress is about $ 3183 dollars.</span><br><span class="line">15:You are the best is mean you are the no. 1.</span><br></pre></td></tr></table></figure>
+<h5 id="限定连续-RE-字符范围"><a href="#限定连续-RE-字符范围" class="headerlink" title="限定连续 RE 字符范围 {}"></a>限定连续 RE 字符范围 {}</h5><p>我们可以利用 . 与 RE 字符及 * 来配置 0 个到无限多个重复字节， 那如果我想要限制一个范围区间内的重复字节数呢？</p>
+<p>举例来说，我想要找出两个到五个 o 的连续字串，该如何作？这时候就得要使用到限定范围的字符 {} 了。 但因为 { 与 } 的符号在 shell 是有特殊意义的，因此， 我们必须要使用字符   \ 来让他失去特殊意义才行。 至於 {} 的语法是这样的，假设我要找到两个 o 的字串，可以是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;o\&#123;2\&#125;&apos; regular_express.txt</span><br><span class="line">1:&quot;Open Source&quot; is a good mechanism to develop programs.</span><br><span class="line">2:apple is my favorite food.</span><br><span class="line">3:Football game is not use feet only.</span><br><span class="line">9:Oh! The soup taste good.</span><br><span class="line">18:google is the best tools for search ke</span><br><span class="line">19:goooooogle yes!</span><br></pre></td></tr></table></figure>
+<p>假设我们要找出 g 后面接 2 到 5 个 o ，然后再接一个 g 的字串，他会是这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;go\&#123;2,5\&#125;g&apos; regular_express.txt</span><br><span class="line">18:google is the best tools for search keyword.</span><br></pre></td></tr></table></figure>
+<p>如果我想要的是 2 个 o 以上的 goooo….g 呢？除了可以是 gooo*g ，也可以是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@www ~]# grep -n &apos;go\&#123;2,\&#125;g&apos; regular_express.txt</span><br><span class="line">18:google is the best tools for search keyword.</span><br><span class="line">19:goooooogle yes!</span><br></pre></td></tr></table></figure>
+<h5 id="扩展grep-grep-E-或者-egrep-："><a href="#扩展grep-grep-E-或者-egrep-：" class="headerlink" title="扩展grep(grep -E 或者 egrep)："></a>扩展grep(grep -E 或者 egrep)：</h5><p>使用扩展grep的主要好处是增加了额外的正则表达式元字符集。</p>
+<p>打印所有包含NW或EA的行。如果不是使用egrep，而是grep，将不会有结果查出。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># egrep &apos;NW|EA&apos; testfile        </span><br><span class="line">northwest       NW      Charles Main        3.0     .98     3       34   </span><br><span class="line">eastern         EA      TB Savage           4.4     .84     5       20</span><br></pre></td></tr></table></figure>
+<p>对于标准grep，如果在扩展元字符前面加\，grep会自动启用扩展选项-E。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#grep &apos;NW\|EA&apos; testfil</span><br><span class="line">enorthwest      NW      Charles Main        3.0     .98     3       34</span><br><span class="line">eastern         EA      TB Savage           4.4     .84     5       20</span><br></pre></td></tr></table></figure>
+<p>搜索所有包含一个或多个3的行。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># egrep &apos;3+&apos; testfile# grep -E &apos;3+&apos; testfile# grep &apos;3\+&apos; testfile        </span><br><span class="line">#这3条命令将会搜索所有包含一个或多个3的行</span><br><span class="line">northwest       NW      Charles Main          3.0     .98     3       34</span><br><span class="line">western         WE      Sharon Gray           5.3     .97     5       23</span><br><span class="line">northeast       NE      AM Main Jr.           5.1     .94     3       13</span><br><span class="line">central         CT      Ann Stephens          5.7     .94     5       13</span><br></pre></td></tr></table></figure>
+<p>搜索所有包含0个或1个小数点字符的行。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># egrep &apos;2\.?[0-9]&apos; testfile # grep -E &apos;2\.?[0-9]&apos; testfile# grep &apos;2\.\?[0-9]&apos; testfile </span><br><span class="line">#首先含有2字符，其后紧跟着0个或1个点，后面再是0和9之间的数字。</span><br><span class="line"></span><br><span class="line">western         WE       Sharon Gray          5.3     .97     5       23</span><br><span class="line">southwest       SW      Lewis Dalsass         2.7     .8      2       18</span><br><span class="line">eastern         EA       TB Savage             4.4     .84     5       20</span><br></pre></td></tr></table></figure>
+<p>搜索一个或者多个连续的no的行。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># egrep &apos;(no)+&apos; testfile# grep -E &apos;(no)+&apos; testfile# grep &apos;\(no\)\+&apos; testfile   #3个命令返回相同结果</span><br><span class="line">northwest       NW      Charles Main        3.0     .98     3       34</span><br><span class="line">northeast       NE       AM Main Jr.        5.1     .94     3       13</span><br><span class="line">north           NO      Margot Weber        4.5     .89     5       9</span><br></pre></td></tr></table></figure>
+<h5 id="不使用正则表达式"><a href="#不使用正则表达式" class="headerlink" title="不使用正则表达式"></a>不使用正则表达式</h5><p>fgrep 查询速度比grep命令快，但是不够灵活：它只能找固定的文本，而不是规则表达式。</p>
+<p>如果你想在一个文件或者输出中找到包含星号字符的行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fgrep  &apos;*&apos; /etc/profilefor i in /etc/profile.d/*.sh ; do</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">grep -F &apos;*&apos; /etc/profilefor i in /etc/profile.d/*.sh ; do</span><br></pre></td></tr></table></figure>
 
       
 
@@ -311,7 +330,7 @@ var _hmt = _hmt || [];
              <strong>本文作者：</strong>Yong YUE
              <br>
 	           <strong>本文链接：</strong>
-	           <a href="https://www.yueyongblog.com/Markdown-use.html">https://www.yueyongblog.com/Markdown-use.html</a>
+	           <a href="https://www.yueyongblog.com/grep-command.html">https://www.yueyongblog.com/grep-command.html</a>
 	            <br>
 	            <strong>版权声明：</strong>本作品采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 进行许可。转载请注明出处！
 	            <br>
@@ -363,7 +382,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">grep</a>
         		</li>
       		
 		</ul>
@@ -419,7 +442,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://www.yueyongblog.com/Markdown-use.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://www.yueyongblog.com/grep-command.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -433,18 +456,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/26-examples-of-find-command-on-linux.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Linux命令行：find的26个用法示例
-        
-      </div>
-    </a>
   
-  
-    <a href="/hello-blog.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World —— My Blog！</div>
+    <a href="/awk-command.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何在Linux中使用awk工具详解</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -463,6 +477,19 @@ var _hmt = _hmt || [];
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#grep常用用法"><span class="toc-number">1.</span> <span class="toc-text">grep常用用法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#根据文件内容递归查找目录"><span class="toc-number">1.1.</span> <span class="toc-text">根据文件内容递归查找目录</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#grep与正则表达式"><span class="toc-number">2.</span> <span class="toc-text">grep与正则表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#字符类"><span class="toc-number">2.1.</span> <span class="toc-text">字符类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#行首与行尾字节"><span class="toc-number">2.2.</span> <span class="toc-text">行首与行尾字节 ^ $</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#任意一个字节-与重复字节"><span class="toc-number">2.3.</span> <span class="toc-text">任意一个字节 . 与重复字节 *</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#限定连续-RE-字符范围"><span class="toc-number">2.4.</span> <span class="toc-text">限定连续 RE 字符范围 {}</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#扩展grep-grep-E-或者-egrep-："><span class="toc-number">2.5.</span> <span class="toc-text">扩展grep(grep -E 或者 egrep)：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#不使用正则表达式"><span class="toc-number">2.6.</span> <span class="toc-text">不使用正则表达式</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
